@@ -1,0 +1,200 @@
+/* --------------------------- */
+/* GENERAL */
+/* --------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #222;
+}
+
+/* --------------------------- */
+/* MENÚ */
+/* --------------------------- */
+
+.nav {
+    background: #002b5c;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav a:hover,
+.nav a.active {
+    color: #00a8ff;
+}
+
+/* --------------------------- */
+/* BIOGRAFÍA */
+/* --------------------------- */
+
+.bio {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 40px;
+    background: white;
+    margin: 30px auto;
+    width: 80%;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.bio img {
+    width: 180px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.bio h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #003366;
+}
+
+/* --------------------------- */
+/* TABLA */
+/* --------------------------- */
+
+.tabla-carrera {
+    width: 80%;
+    margin: 30px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.tabla-carrera h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #003366;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th {
+    background: #003366;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* --------------------------- */
+/* CONTACTO */
+/* --------------------------- */
+
+.contacto {
+    width: 80%;
+    margin: 30px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.contacto h2 {
+    margin-bottom: 15px;
+    color: #003366;
+}
+
+.iconos {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+/* Íconos estilo círculo */
+.iconos {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+/* Iconos como imágenes */
+.icon-img {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    background: #003366;
+    transition: 0.3s;
+    filter: invert(100%); /* hace los svg blancos */
+}
+
+/* Animación hover: cambia color y agranda */
+.icon-img:hover {
+    background: #00a8ff;
+    transform: scale(1.15);
+}
+
+/* Colores base */
+.fb { background: #3b5998; }
+.ig { background: #E1306C; }
+.tw { background: #111; }
+.ln { background: #0e76a8; }
+
+/* Animación hover */
+.icon:hover {
+    filter: brightness(1.4);
+    transform: scale(1.15);
+}
+
+/* Botón PDF */
+.cv-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #003366;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.cv-btn:hover {
+    background: #001a33;
+}
+
+/* --------------------------- */
+/* FOOTER */
+/* --------------------------- */
+
+footer {
+    background: #002b5c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}

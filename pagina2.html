@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería - Fernando Alonso</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <header>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pagina1.html">Perfil Profesional</a></li>
+                <li><a href="pagina2.html" class="active">Galería</a></li>
+                <li><a href="pagina3.html">Blog Profesional</a></li>
+                <li><a href="https://www.caranddriver.com/es/formula-1/pilotos/a3517/fernando-alonso/">Títulos y Logros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- GALERÍA DE IMÁGENES -->
+    <section class="gallery">
+        <!-- Imagen 1 -->
+        <div class="gallery-item anim-1">
+            <img src="https://www.fernandoalonso.com/wp-content/uploads/2023/11/GP2320_154650_U1A0608.jpg" alt="Alonso en pista">
+            <div class="overlay">
+                <h3>Alonso en carrera</h3>
+                <p>Imagen de Alonso durante una carrera de F1.</p>
+            </div>
+        </div>
+
+        <!-- Imagen 2 -->
+        <div class="gallery-item anim-2">
+            <img src="https://www.fernandoalonso.com/wp-content/uploads/2023/06/GP2306_150324SMG_5612.jpg" alt="Podio">
+            <div class="overlay">
+                <h3>Podio</h3>
+                <p>Celebrando en el podio tras una victoria.</p>
+            </div>
+        </div>
+
+        <!-- Imagen 3 -->
+        <div class="gallery-item anim-3">
+            <img src="https://imagenes2.eltiempo.com/files/image_600_455/uploads/2023/11/01/6542bad259fd7.jpeg" alt="Preparación">
+            <div class="overlay">
+                <h3>Preparación</h3>
+                <p>Fernando revisando el auto antes de la carrera.</p>
+            </div>
+        </div>
+
+        <!-- Imagen 4 -->
+        <div class="gallery-item anim-4">
+            <img src="https://s1.elespanol.com/2023/04/16/elbernabeu/756684592_232453755_1706x960.jpg" alt="Saludo">
+            <div class="overlay">
+                <h3>Saludo a fans</h3>
+                <p>Saludando a los aficionados antes de la carrera.</p>
+            </div>
+        </div>
+
+        <!-- Imagen 5 -->
+        <div class="gallery-item anim-5">
+            <img src="https://www.infobae.com/resizer/v2/7DLLGVZAEI2UUCGMOFT2ELMXFM.jpg?auth=1f96d899ab740045f8ffb26e195846e13651666c1787941168c01c681c15d53f&smart=true&width=992&height=637&quality=85" alt="Entrenamiento">
+            <div class="overlay">
+                <h3>Entrenamiento</h3>
+                <p>Sesión de entrenamiento en el circuito.</p>
+            </div>
+        </div>
+
+        <!-- Imagen 6 -->
+        <div class="gallery-item anim-6">
+            <img src="https://preview.redd.it/ci332m3a20t31.jpg?auto=webp&s=e43fd8580c8a09d20560d540e1d6325d68c1332d" alt="Celebración">
+            <div class="overlay">
+                <h3>Celebración</h3>
+                <p>Alonso celebrando un triunfo histórico.</p>
+            </div>
+        </div>
+
+        <!-- Imagen 7 -->
+        <div class="gallery-item anim-7">
+            <img src="https://cdn-5.motorsport.com/images/amp/2d1aaDLY/s1000/fernando-alonso-aston-martin-a.jpg" alt="Auto en pista">
+            <div class="overlay">
+                <h3>Auto en pista</h3>
+                <p>Momento de acción durante la carrera.</p>
+            </div>
+        </div>
+
+        <!-- Imagen 8 -->
+        <div class="gallery-item anim-8">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/third-placed-fernando-alonso-of-spain-and-aston-martin-f1-news-photo-1699628211.jpg?crop=0.88932xw:1xh;center,top&resize=1200:*" alt="Premiación">
+            <div class="overlay">
+                <h3>Premiación</h3>
+                <p>Recibiendo un premio importante en su carrera.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p><strong>Todos los derechos reservados ©  Nestor Diosnel Ruiz Rotela</strong> — <span id="fecha"></span></p>
+    </footer>
+
+    <script>
+        document.getElementById("fecha").textContent = new Date().toLocaleDateString();
+    </script>
+
+</body>
+</html>

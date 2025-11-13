@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fernando Alonso - Página Principal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <header>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pagina1.html">Perfil Profesional</a></li>
+                <li><a href="pagina2.html">Galería</a></li>
+                <li><a href="pagina3.html">Blog Profesional</a></li>
+                <li><a href="https://www.caranddriver.com/es/formula-1/pilotos/a3517/fernando-alonso/">Títulos y Logros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- PRESENTACIÓN -->
+    <section class="hero">
+        <h1>Fernando Alonso</h1>
+        <p>Doble campeón del mundo de Fórmula 1</p>
+    </section>
+
+    <!-- BOTONES ANIMADOS EN CUADROS -->
+    <section class="cards-container">
+
+        <!-- Card 1 -->
+        <div class="card card-1">
+            <div class="card-img"></div>
+            <h2>Inicio</h2>
+            <a class="btn btn-1" href="index.html">Entrar</a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card card-2">
+            <div class="card-img"></div>
+            <h2>Perfil Profesional</h2>
+            <a class="btn btn-2" href="pagina1.html">Entrar</a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card card-3">
+            <div class="card-img"></div>
+            <h2>Galería</h2>
+            <a class="btn btn-3" href="pagina2.html">Ver Fotos</a>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card card-4">
+            <div class="card-img"></div>
+            <h2>Blog Profesional</h2>
+            <a class="btn btn-4" href="pagina3.html">Leer Blog</a>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card card-5">
+            <div class="card-img"></div>
+            <h2>Títulos y Logros</h2>
+            <a class="btn btn-5" href="https://www.caranddriver.com/es/formula-1/pilotos/a3517/fernando-alonso/" target="_blank">Explorar</a>
+        </div>
+
+
+    </section>
+
+    <!-- DESCRIPCIÓN -->
+    <section class="description">
+        <h2>Contenido de las otras páginas</h2>
+
+        <p><strong>Perfil Profesional:</strong> Historia completa de su carrera y evolución en la F1.</p>
+        <button class="desc-btn btn-change">Perfil</button>
+
+        <p><strong>Galería:</strong> Fotos destacadas de su trayectoria.</p>
+        <button class="desc-btn btn-cycle">Galería</button>
+
+        <p><strong>Blog Profesional:</strong> Opiniones y análisis personales.</p>
+        <button class="desc-btn btn-rotate">Blog</button>
+
+        <p><strong>Títulos y Logros:</strong> Campeonatos y premios conseguidos.</p>
+        <button class="desc-btn btn-hover-scale">Títulos</button>
+
+        <p><strong>Curiosidades:</strong> Datos y récords interesantes.</p>
+        <button class="desc-btn btn-variable-speed">Curiosidades</button>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p><strong>Todos los derechos reservados ©  Nestor Diosnel Ruiz Rotela</strong> — <span id="fecha"></span></p>
+    </footer>
+
+    <script>
+        document.getElementById("fecha").textContent = new Date().toLocaleDateString();
+    </script>
+
+</body>
+</html>

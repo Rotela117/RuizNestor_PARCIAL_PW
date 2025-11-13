@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Profesional - Fernando Alonso</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <header>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pagina1.html" class="active">Perfil Profesional</a></li>
+                <li><a href="pagina2.html">Galería</a></li>
+                <li><a href="pagina3.html">Blog Profesional</a></li>
+                <li><a href="https://www.caranddriver.com/es/formula-1/pilotos/a3517/fernando-alonso/">Títulos y Logros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- BIOGRAFÍA -->
+    <section class="bio">
+        <img src="https://www.fernandoalonso.com/wp-content/uploads/2024/02/Z92_8371-Editb-300x300.jpg" alt="Fernando Alonso">
+        <div>
+            <h1>Perfil Profesional</h1>
+            <p>Fernando Alonso es un piloto español de automovilismo, considerado uno de los competidores más completos en la historia de la Fórmula 1. Con dos campeonatos mundiales, múltiples victorias y una carrera llena de momentos históricos, su legado sigue vigente después de más de dos décadas en las pistas.</p>
+        </div>
+    </section>
+
+    <!-- TABLA DE CARRERA -->
+    <section class="tabla-carrera">
+        <h2>Carrera Profesional</h2>
+        <table>
+            <tr>
+                <th>Año</th>
+                <th>Escudería</th>
+                <th>Resultado Destacado</th>
+            </tr>
+            <tr>
+                <td>2001</td>
+                <td>Minardi</td>
+                <td>Debut en F1</td>
+            </tr>
+            <tr>
+                <td>2003</td>
+                <td>Renault</td>
+                <td>Primer podio</td>
+            </tr>
+            <tr>
+                <td>2005</td>
+                <td>Renault</td>
+                <td>Campeón del Mundo</td>
+            </tr>
+            <tr>
+                <td>2006</td>
+                <td>Renault</td>
+                <td>Bicampeón del Mundo</td>
+            </tr>
+            <tr>
+                <td>2012</td>
+                <td>Ferrari</td>
+                <td>Subcampeón</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contacto">
+        <h2>Contacto y Redes Sociales</h2>
+
+        <div class="iconos">
+            <a href="https://facebook.com" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" class="icon-img">
+            </a>
+
+            <a href="https://instagram.com" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" class="icon-img">
+            </a>
+
+            <a href="https://x.com" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg" class="icon-img">
+            </a>
+
+            <a href="https://linkedin.com" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" class="icon-img">
+            </a>
+        </div>
+
+
+        <a class="cv-btn" href="https://es.wikipedia.org/wiki/Fernando_Alonso" target="_blank">Ver Perfil en Wikipedia</a>
+
+        <a class="cv-btn" href="curriculum.pdf" target="_blank">Ver Currículum PDF</a>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p><strong>Todos los derechos reservados ©  Nestor Diosnel Ruiz Rotela</strong> — <span id="fecha"></span></p>
+    </footer>
+
+    <script>
+        document.getElementById("fecha").textContent = new Date().toLocaleDateString();
+    </script>
+
+</body>
+</html>

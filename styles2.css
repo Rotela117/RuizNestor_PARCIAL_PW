@@ -1,0 +1,148 @@
+/* --------------------------- */
+/* GENERAL */
+/* --------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #222;
+}
+
+/* --------------------------- */
+/* NAVBAR */
+/* --------------------------- */
+
+.nav {
+    background: #002b5c;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav a:hover,
+.nav a.active {
+    color: #00a8ff;
+}
+
+/* --------------------------- */
+/* GALERÍA */
+/* --------------------------- */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+
+/* GALERÍA ITEM */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    cursor: pointer;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: all 0.5s ease;
+}
+
+/* OVERLAY */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    width: 100%;
+    padding: 15px;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+/* --------------------------- */
+/* ANIMACIONES DIFERENTES REALES */
+.anim-1 img:hover { 
+    transform: scale(1.1) rotate(2deg); 
+    filter: none;
+}
+
+.anim-2 img:hover { 
+    transform: scale(1.08); 
+    filter: brightness(1.4);
+}
+
+.anim-3 img:hover { 
+    transform: scale(1.08); 
+    filter: saturate(1.6);
+}
+
+.anim-4 img:hover { 
+    transform: scale(1); 
+    filter: brightness(0.6);
+}
+
+.anim-5 img:hover { 
+    transform: scale(1.08); 
+    filter: blur(2px);
+}
+
+.anim-6 img:hover { 
+    transform: scale(1.07) rotateX(10deg); 
+    filter: none;
+}
+
+.anim-7 img:hover { 
+    transform: translateX(10px); 
+    filter: saturate(1.4);
+}
+
+.anim-8 img:hover { 
+    transform: scale(1.08) rotate(-5deg); 
+    filter: sepia(0.5);
+}
+
+/* --------------------------- */
+/* OVERLAY PARA IMAGENES (opcional) */
+.gallery-item:hover .overlay {
+    opacity: 1;
+    transform: translateY(-10px); /* hace que overlay suba un poco */
+}
+
+/* --------------------------- */
+/* FOOTER */
+/* --------------------------- */
+
+footer {
+    background: #002b5c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}

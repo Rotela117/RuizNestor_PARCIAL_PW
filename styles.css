@@ -1,0 +1,262 @@
+/* --------------------------- */
+/* ESTILOS GENERALES */
+/* --------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f3f3;
+    color: #222;
+}
+
+/* --------------------------- */
+/* MENÚ DE NAVEGACIÓN */
+/* --------------------------- */
+
+.nav {
+    background: #002b5c;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    color: #00a8ff;
+}
+
+/* --------------------------- */
+/* HERO */
+/* --------------------------- */
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: #ececec;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #003366;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* --------------------------- */
+/* CARDS CON ANIMACIÓN */
+/* --------------------------- */
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 40px;
+}
+
+/* ESTILO GENERAL DE CADA CARD */
+.card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 20px;
+    transition: transform .3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+/* IMÁGENES DE LAS CARDS */
+.card-img {
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Imagen por cada card */
+.card-1 .card-img {
+    background-image: url('https://images.unsplash.com/photo-1503736334956-4c8f8e92946d');
+}
+
+.card-2 .card-img {
+    background-image: url('https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e');
+}
+
+.card-3 .card-img {
+    background-image: url('https://images.unsplash.com/photo-1502877338535-766e1452684a');
+}
+
+.card-4 .card-img {
+    background-image: url('https://images.unsplash.com/photo-1518779578993-ec3579fee39f');
+}
+
+.card-5 .card-img {
+    background-image: url('https://images.unsplash.com/photo-1503736334956-4c8f8e92946d');
+}
+
+/* --------------------------- */
+/* BOTONES */
+/* --------------------------- */
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    background: #003366;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+/* Animaciones distintas para cada botón */
+
+/* Botón 1: Crece */
+.btn-1:hover {
+    transform: scale(1.12);
+}
+
+/* Botón 2: Rebote */
+.btn-2:hover {
+    animation: bounce 0.4s;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    40% { transform: translateY(-6px); }
+    100% { transform: translateY(0); }
+}
+
+/* Botón 3: Brillo */
+.btn-3:hover {
+    box-shadow: 0 0 12px #00a8ff;
+}
+
+/* Botón 4: Giro suave */
+.btn-4:hover {
+    transform: rotate(4deg);
+}
+
+/* Botón 5: Oscurece */
+.btn-5:hover {
+    background: #001a33;
+}
+
+/* --------------------------- */
+/* DESCRIPCIÓN */
+/* --------------------------- */
+
+.description {
+    padding: 30px 40px;
+}
+
+.description h2 {
+    margin-bottom: 15px;
+    font-size: 28px;
+    color: #003366;
+}
+
+.description p {
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+/* --------------------------- */
+/* FOOTER */
+/* --------------------------- */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #002b5c;
+    color: white;
+    margin-top: 40px;
+    font-size: 16px;
+}
+
+
+/* BOTONES DE DESCRIPCIÓN */
+.desc-btn {
+    display: inline-block;
+    margin: 10px 0 20px;
+    padding: 10px 20px;
+    background: #003366;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+/* 1. Botón Cambiante: color y tamaño gradualmente */
+.btn-change:active {
+    background: #00a8ff;
+    transform: scale(1.2);
+}
+
+/* 2. Animación de Ciclo de Colores */
+.btn-cycle {
+    animation: colorCycle 3s infinite;
+}
+
+@keyframes colorCycle {
+    0% { background: #003366; }
+    33% { background: #0055aa; }
+    66% { background: #00a8ff; }
+    100% { background: #003366; }
+}
+
+/* 3. Texto Rotativo */
+.btn-rotate {
+    display: inline-block;
+    animation: rotateText 4s linear infinite;
+}
+
+@keyframes rotateText {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* 4. Cambio de tamaño con hover */
+.btn-hover-scale:hover {
+    transform: scale(1.15);
+}
+
+/* 5. Velocidad de Animación Variable con pausa */
+.btn-variable-speed {
+    animation: spinPause 4s linear infinite;
+}
+
+@keyframes spinPause {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(360deg); }  /* completa una vuelta en 2s */
+    50.01% { transform: rotate(360deg); } /* comienza la pausa */
+    100% { transform: rotate(360deg); }   /* mantiene 360deg durante los 2s restantes */
+}
+
+

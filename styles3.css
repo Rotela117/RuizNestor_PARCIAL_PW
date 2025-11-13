@@ -1,0 +1,120 @@
+/* --------------------------- */
+/* GENERAL */
+/* --------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #222;
+}
+
+/* --------------------------- */
+/* NAVBAR */
+/* --------------------------- */
+
+.nav {
+    background: #002b5c;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav a:hover,
+.nav a.active {
+    color: #00a8ff;
+}
+
+/* --------------------------- */
+/* BLOG ITEMS */
+/* --------------------------- */
+
+.blog {
+    width: 80%;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.blog-item {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease;
+}
+
+.blog-item.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.blog-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.blog-item h2 {
+    color: #003366;
+    margin-bottom: 15px;
+}
+
+.blog-item p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* BOTONES LEER MÁS */
+.read-more {
+    display: block;
+    text-align: center;
+    padding: 12px 25px;
+    background: #003366;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+    width: 180px;
+    margin: 0 auto;
+}
+
+.read-more:hover {
+    background: #001a33;
+}
+
+/* --------------------------- */
+/* FOOTER */
+/* --------------------------- */
+
+footer {
+    background: #002b5c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}

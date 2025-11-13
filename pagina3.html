@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Profesional - Fernando Alonso</title>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <header>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pagina1.html">Perfil Profesional</a></li>
+                <li><a href="pagina2.html">Galería</a></li>
+                <li><a href="pagina3.html" class="active">Blog Profesional</a></li>
+                <li><a href="https://www.caranddriver.com/es/formula-1/pilotos/a3517/fernando-alonso/">Títulos y Logros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- BLOG -->
+    <section class="blog">
+
+        <!-- Paso 1 -->
+        <article class="blog-item">
+            <img src="https://media.formula1.com/image/upload/c_lfill,w_3392/q_auto/v1740000000/content/dam/fom-website/manual/Misc/Alonso350feature/GettyImages-51498755.webp" alt="Debut en Minardi">
+            <h2>Debut en Minardi (2001)</h2>
+            <p>
+                Fernando Alonso hizo su debut en Fórmula 1 con el equipo Minardi en 2001. Desde muy joven, demostró una gran habilidad y rapidez en la pista, sorprendiendo a veteranos pilotos y equipos. Durante su primera temporada, aprendió los fundamentos de la competición de alto nivel y la importancia de la consistencia en cada carrera. Su enfoque profesional y capacidad de adaptación lo destacaron rápidamente en el paddock internacional, marcando el inicio de una carrera extraordinaria.
+            </p>
+            <a class="read-more" href="https://www.formula1.com/en/latest/article/he-could-perform-miracles-alonsos-debut-f1-season-remembered-by-those-who.4hVsWBW1PUmu9rdG2vvVTt" target="_blank">Leer más</a>
+        </article>
+
+        <!-- Paso 2 -->
+        <article class="blog-item">
+            <img src="https://cms-images.acc.indazn.com/di/library/DAZN_News/34/1f/fernando-alonso-renault-2005_1k3qvjj14nc8x1ovw3vk52tz1m.jpeg?t=103955284&quality=85&w=926" alt="Renault Campeón">
+            <h2>Renault y el Bicampeonato (2005-2006)</h2>
+            <p>
+                Alonso se unió a Renault y rápidamente se consolidó como uno de los pilotos más completos. En 2005 y 2006, ganó dos campeonatos mundiales, demostrando una combinación única de velocidad, inteligencia estratégica y resistencia física. Sus victorias incluyeron adelantamientos memorables y actuaciones destacadas bajo condiciones difíciles. Su relación con el equipo y su capacidad para desarrollar el auto fueron claves para lograr estos triunfos, convirtiéndose en una leyenda de la F1.
+            </p>
+            <a class="read-more" href="https://www.dazn.com/es-ES/news/motor/fernando-alonso-renault-cuantos-anos-estuvo-cuantas-carreras-mundiales-gano-quien-fue-companero/16nvncyojrv7o16z3k4ndudggd" target="_blank">Leer más</a>
+        </article>
+
+        <!-- Paso 3 -->
+        <article class="blog-item">
+            <img src="https://cms-images.acc.indazn.com/di/library/DAZN_News/62/21/fernando-alonso-jenson-button-felipe-massa-monza-2010_1uh45m3v40bm0170f5agtekzpq.jpeg?t=495268835&quality=85&w=926" alt="Ferrari y Subcampeonatos">
+            <h2>Ferrari (2010-2014)</h2>
+            <p>
+                Durante su etapa en Ferrari, Fernando Alonso compitió intensamente por los campeonatos, logrando varios subcampeonatos. Su dedicación y perfeccionismo lo hicieron destacar en cada gran premio, siendo un referente en estrategia y pilotaje agresivo. Participó en carreras icónicas, enfrentando a rivales de la talla de Vettel y Hamilton, y dejó una huella imborrable en el equipo. Esta etapa consolidó su reputación como piloto excepcional, capaz de rendir al máximo en cualquier circunstancia.
+            </p>
+            <a class="read-more" href="https://www.dazn.com/es-ES/news/motor/fernando-alonso-ferrari-cuantos-anos-estuvo-cuantas-carreras-mundiales-gano-quien-fue-companero/17ohj0y6cavic1jbs5mztpmw02" target="_blank">Leer más</a>
+        </article>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p><strong>Todos los derechos reservados ©  Nestor Diosnel Ruiz Rotela</strong> — <span id="fecha"></span></p>
+    </footer>
+
+    <script>
+        // Fecha automática
+        document.getElementById("fecha").textContent = new Date().toLocaleDateString();
+
+        // Animación scroll hacia arriba
+        const items = document.querySelectorAll('.blog-item');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting){
+                    entry.target.classList.add('show');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        items.forEach(item => observer.observe(item));
+    </script>
+
+</body>
+</html>
